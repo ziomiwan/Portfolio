@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Zbiór pepe</title>
+	<meta name="description" content="Blog o emotkach pepe">
+	<meta name="keywords" content="pepe, peepo, emoji">
+	<meta name="author" content="Marcel Archutowski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-dark bg-dark bg-primary navbar-expand-md">
+
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="30" height="30" class="d-inline-block mr-1 align-bottom" alt=""> Pepe.pl</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"> HOME </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="aboutme.html"> ABOUT ME </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html"> PORTFOLIO </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html"> BLOG </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html"> CONTACT </a>
+						</li>
+
+          </ul>
+        </div>
+
+    </nav>
+
+  </header>
+
+	<form class="form" id="contactForm" method="post" action="/send-scripts.php">
+    <div class="form-row">
+        <label for="field-name">Imię*</label>
+        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+    </div>
+    <div class="form-row">
+        <label for="field-email">Email*</label>
+        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+    </div>
+    <div class="form-row">
+        <label for="field-message">Wiadomość*</label>
+        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+    </div>
+    <div class="form-row">
+        <label class="checkbox-cnt">
+            <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+            <i class="state" aria-hidden="true"></i>
+            <span>Zapoznałem się z warunkami serwisu ect.</span>
+        </label>
+    </div>
+    <div class="form-row">
+        <button type="submit" class="submit-btn">
+            Wyślij
+        </button>
+    </div>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10017.655413805875!2d16.9889228!3d51.1192739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5931f24dce80b3e2!2sMagnolia+Park!5e0!3m2!1spl!2spl!4v1560452360249!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0; margin-top:30px;" allowfullscreen></iframe>
+</form>
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
